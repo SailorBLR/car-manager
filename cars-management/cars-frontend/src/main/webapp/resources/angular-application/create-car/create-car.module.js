@@ -3,5 +3,5 @@
  */
 'use strict';
 
-/**Create news module declaration (createNews)*/
+/**Create car module declaration (createcar)*/
 angular.module('createCar', []);

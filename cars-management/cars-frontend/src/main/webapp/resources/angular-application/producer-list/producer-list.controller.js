@@ -3,7 +3,7 @@
  */
 'use strict';
 
-/**News source select controller. Makes request to API. GET list of sources*/
+/**car source select controller. Makes request to API. GET list of sources*/
 angular.module('producerList').component('producerList', {
     templateUrl: 'resources/angular-application/producer-list/producer-list.template.html',
     controller: ['$http', '$scope', 'localStorageService', 'SetProducer',

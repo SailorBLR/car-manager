@@ -3,13 +3,13 @@
  */
 'use strict';
 
-/**Create news controller*/
+/**Create car controller*/
 angular.
 module('createCar').
 component('createCar',  {
     templateUrl: 'resources/angular-application/create-car/create-car.template.html',
     controller: ['$scope', '$http', 'localStorageService',
-        function CreateNewsController($scope, $http, localStorageService) {
+        function CreatecarController($scope, $http, localStorageService) {
 
             $scope.defaultValues = {produceYear: null, fuel: "gas", transmission: "automatic"};
 

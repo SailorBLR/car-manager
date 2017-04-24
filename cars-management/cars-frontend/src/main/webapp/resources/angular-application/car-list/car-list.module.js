@@ -3,5 +3,5 @@
  */
 'use strict';
 
-/**News list module declaration (newsList)*/
+/**car list module declaration (carList)*/
 angular.module('carList', ['producerList']);

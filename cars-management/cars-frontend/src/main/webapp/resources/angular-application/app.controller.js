@@ -3,7 +3,7 @@
  */
 'use strict';
 
-/** Register `newsView` core component, along with its associated controller and template*/
+/** Register `carView` core component, along with its associated controller and template*/
 angular.
 module('carsManagement')
     .controller('carManagementCtrl',function($http) {
