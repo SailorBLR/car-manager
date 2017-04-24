@@ -1,0 +1,18 @@
+<!--Body content-->
+<div id="secwrapper">
+    <section>
+        <ul>
+            <li class="blank" ng-repeat="car in cars" article-id="{{car.carId}}">
+                <article>
+                    <button id="deleteButton" name="deleteButton" class="btn btn-danger" style="float: right" ng-click="delete(car.carId);">Delete</button>
+                    <h3><a href="/producers/{{car.producerId}}" style = "margin-left: 5%">{{car.producerName}}</a></h3>
+                    <h4><a href="/producers/{{car.producerId}}" style = "margin-left: 5%">{{car.modelName}}</a></h4>
+                    <p>Production year: {{car.produceYear.year}}</p>
+                    <p>Transmission: {{car.transmission}}</p>
+                    <p>Fuel: {{car.fuel}}</p>
+                    <a href="/cars/{{cars.indexOf(car)}}" class="readmore">Read more</a>
+                </article>
+            </li>
+        </ul>
+    </section>
+</div>

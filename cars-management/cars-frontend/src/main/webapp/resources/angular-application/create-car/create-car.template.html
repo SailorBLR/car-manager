@@ -1,0 +1,51 @@
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Adding Car</legend>
+
+        <producer-list></producer-list>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="dateInput">Production Year</label>
+            <div class="col-md-6">
+                <input id="dateInput" name="produceYear" type="date"
+                       class="form-control input-md" required="true" ng-model="car.produceYear">
+
+            </div>
+        </div>
+
+        <!-- Fuel -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="fuelField">Fuel</label>
+            <div class="col-md-6">
+                <select class="form-control" id="fuelField" name="fuel" required="true"
+                        ng-model="car.fuel">
+                    <option value="gas">gas</option>
+                    <option value="gazoline">gazoline</option>
+                    <option value="diesel">diesel</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="transmissionField">Transmission</label>
+            <div class="col-md-6">
+                <select class="form-control" id="transmissionField" name="fuel" required="true"
+                        ng-model="car.transmission">
+                    <option value="automatic">automatic</option>
+                    <option value="mechanic">mechanic</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="saveButton">Choose</label>
+            <div id="button-pane" class="col-md-8">
+                <button id="saveButton" name="saveButton" class="btn btn-success" ng-click="save()">Create</button>
+                <button id="resetButton" name="resetButton" class="btn btn-danger" ng-click="reset()">Clear</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<!-- Button (Double) -->

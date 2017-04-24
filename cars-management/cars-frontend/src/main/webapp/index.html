@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="carsManagement">
+<head>
+    <meta charset="utf-8">
+    <title>News Channel</title>
+    <link rel="stylesheet" href="resources/style/css/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/style/css/style.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script data-require="angular.js@*" data-semver="1.6.3" src="http://code.angularjs.org/1.6.3/angular.js"></script>
+    <script src="resources/angular-source/angular-animate.js"></script>
+    <script src="resources/angular-source/angular-route.js"></script>
+    <script src="resources/angular-source/angular-local-storage.js"></script>
+    <script src="resources/angular-source/jquery-3.2.1.min.js"></script>
+
+    <script src="resources/angular-application/app.js"></script>
+    <script src="resources/angular-application/app.config.js"></script>
+    <script src="resources/angular-application/app.controller.js"></script>
+    <script src="resources/angular-application/car-list/car-list.module.js"></script>
+    <script src="resources/angular-application/car-list/car-list.controller.js"></script>
+    <script src="resources/angular-application/producer-list/producer-list.module.js"></script>
+    <script src="resources/angular-application/producer-list/producer-list.service.js"></script>
+    <script src="resources/angular-application/producer-list/producer-list.controller.js"></script>
+    <script src="resources/angular-application/create-car/create-car.module.js"></script>
+    <script src="resources/angular-application/create-car/create-car.controller.js"></script>
+    <base href="/">
+</head>
+<header>
+    <h1><a href="/">Cars Management</a></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Cars</a></li>
+            <li><a href="/create">Create car</a></li>
+        </ul>
+    </nav>
+</header>
+<body ng-controller="carManagementCtrl">
+<div class="view-container">
+    <div ng-view></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="form-group">
+    <label class="col-md-4 control-label" for="producerSelect">Select producer</label>
+    <div class="col-md-6">
+        <select class="form-control" id="producerSelect" data-ng-model="currentProducer"
+                data-ng-options="producer.producerProxyName for producer in producers track by producer.producerProxyId">
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="col-md-4 control-label" for="modelSelect">Select model</label>
+    <div class="col-md-6">
+        <select class="form-control" id="modelSelect" data-ng-model="currentModel"
+                data-ng-options="model.carModelProxyName for model in models track by model.carModelProxyId">
+        </select>
+    </div>
+</div>
